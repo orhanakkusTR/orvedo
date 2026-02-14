@@ -1,0 +1,10 @@
+# Netlify Redirects - DISABLED
+# Transition page gösteriliyor, otomatik yönlendirme meta tag ile yapılıyor
+
+# Ana domain redirect (DEVRE DIŞI)
+# https://orvedo.com/* https://awj.ai/:splat 301!
+# http://orvedo.com/* https://awj.ai/:splat 301!
+
+# www subdomain redirect (DEVRE DIŞI)
+# https://www.orvedo.com/* https://awj.ai/:splat 301!
+# http://www.orvedo.com/* https://awj.ai/:splat 301!
