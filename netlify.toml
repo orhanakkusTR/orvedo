@@ -1,0 +1,28 @@
+# Netlify Configuration File
+
+# Domain redirects - DISABLED (transition page gösteriliyor)
+# [[redirects]]
+#   from = "https://orvedo.com/*"
+#   to = "https://awj.ai/:splat"
+#   status = 301
+#   force = true
+
+# [[redirects]]
+#   from = "https://www.orvedo.com/*"
+#   to = "https://awj.ai/:splat"
+#   status = 301
+#   force = true
+
+# Build settings
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
